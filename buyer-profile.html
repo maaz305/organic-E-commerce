@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Buyer Profile | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="top">
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+
+      <nav class="links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="cart.html"
+          class="cart"
+        >
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+        </a>
+
+        <a
+          href="login.html"
+          class="account-link"
+          data-account-link
+        >
+          👤 Login
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- BUYER PROFILE -->
+
+  <main
+    id="buyerProfile"
+    class="buyer-profile-ui"
+  >
+
+
+    <!-- BUYER WELCOME -->
+
+    <section class="buyer-profile-hero">
+
+      <div class="container buyer-welcome-row">
+
+        <div>
+
+          <span class="buyer-pill">
+            🛍️ Buyer account
+          </span>
+
+          <h1>
+            Hello,
+            <span data-profile-name>
+              Buyer
+            </span>.
+          </h1>
+
+          <p>
+            Your personal place to shop fresh produce,
+            check your cart and track farm orders.
+          </p>
+
+        </div>
+
+
+        <div class="buyer-hero-card">
+
+          <span>
+            🥬
+          </span>
+
+          <div>
+
+            <small>
+              MAAZ FARMS BUYER
+            </small>
+
+            <b>
+              Fresh food, picked for you.
+            </b>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- BUYER DASHBOARD -->
+
+    <section class="section buyer-profile-section">
+
+      <div class="container buyer-dashboard-layout">
+
+
+        <!-- LEFT PROFILE -->
+
+        <aside class="buyer-profile-card">
+
+
+          <!-- BUYER PROFILE PHOTO -->
+
+          <div class="buyer-avatar-ring">
+
+            <div class="buyer-avatar">
+
+              <img
+                src="assets/photos/buyer-profile.jpg"
+                alt="Buyer profile photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+              >
+
+              <span
+                class="buyer-avatar-fallback"
+                style="display:none;"
+              >
+                👤
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <h2 data-profile-name>
+            Buyer
+          </h2>
+
+          <span class="buyer-role">
+            Verified Buyer
+          </span>
+
+
+          <!-- BUYER INFORMATION -->
+
+          <div class="buyer-info-list">
+
+            <div>
+
+              <span>
+                📧 Email
+              </span>
+
+              <b data-profile-email>
+                -
+              </b>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                📱 Phone
+              </span>
+
+              <b data-profile-phone>
+                -
+              </b>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                📍 Delivery address
+              </span>
+
+              <b data-profile-address>
+                Not added
+              </b>
+
+            </div>
+
+          </div>
+
+
+          <a
+            class="buyer-shop-link"
+            href="shop.html"
+          >
+            🧺 Continue Shopping →
+          </a>
+
+
+          <button
+            class="buyer-logout"
+            type="button"
+            onclick="logout()"
+          >
+            Logout
+          </button>
+
+        </aside>
+
+
+
+        <!-- RIGHT WORKSPACE -->
+
+        <div class="buyer-workspace">
+
+
+          <!-- STATS -->
+
+          <div class="buyer-stat-grid">
+
+
+            <article>
+
+              <span class="buyer-stat-icon">
+                📦
+              </span>
+
+              <div>
+
+                <small>
+                  Total Orders
+                </small>
+
+                <strong id="buyerOrderCount">
+                  0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+
+            <article>
+
+              <span class="buyer-stat-icon">
+                ₹
+              </span>
+
+              <div>
+
+                <small>
+                  Total Spent
+                </small>
+
+                <strong id="buyerSpend">
+                  ₹0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+
+            <article>
+
+              <span class="buyer-stat-icon">
+                🛒
+              </span>
+
+              <div>
+
+                <small>
+                  Cart Items
+                </small>
+
+                <strong data-cart-count>
+                  0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+          </div>
+
+
+
+          <!-- ORDER HISTORY -->
+
+          <section class="buyer-panel buyer-orders-panel">
+
+            <div class="panel-heading">
+
+              <div>
+
+                <span>
+                  ORDER HISTORY
+                </span>
+
+                <h3>
+                  Recent Orders
+                </h3>
+
+              </div>
+
+
+              <a href="shop.html">
+                Shop more →
+              </a>
+
+            </div>
+
+
+            <div id="buyerOrders">
+            </div>
+
+          </section>
+
+
+
+          <!-- QUICK ACTIONS -->
+
+          <section class="buyer-panel">
+
+            <div class="panel-heading">
+
+              <div>
+
+                <span>
+                  QUICK ACTIONS
+                </span>
+
+                <h3>
+                  What would you like to do?
+                </h3>
+
+              </div>
+
+            </div>
+
+
+            <div class="buyer-actions">
+
+              <a href="fruits.html">
+                🥭 Shop Fruits
+              </a>
+
+              <a href="vegetables.html">
+                🥕 Shop Vegetables
+              </a>
+
+              <a href="cart.html">
+                🛒 Open Cart
+              </a>
+
+            </div>
+
+          </section>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables
+            grown responsibly and delivered
+            directly from farm to home.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Accounts
+          </h3>
+
+          <a href="login.html">
+            Login
+          </a>
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+          <a href="buyer-profile.html">
+            Buyer Profile
+          </a>
+
+          <a href="farmer-dashboard.html">
+            Farmer Dashboard
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

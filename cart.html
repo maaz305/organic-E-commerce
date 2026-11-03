@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Cart | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- TOP BAR -->
+
+  <div class="top">
+
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- HEADER -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+
+      <!-- LOGO -->
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+
+
+      <!-- NAVIGATION -->
+
+      <nav class="links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+
+        <a
+          href="cart.html"
+          class="cart active"
+        >
+
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+
+        </a>
+
+
+        <a
+          href="login.html"
+          class="account-link"
+          data-account-link
+        >
+
+          👤 Login
+
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- MAIN -->
+
+  <main>
+
+
+    <!-- CART TITLE -->
+
+    <section class="page">
+
+      <div class="container">
+
+        <span class="badge">
+          Shopping cart
+        </span>
+
+        <h1>
+          Your
+          <span>
+            organic basket.
+          </span>
+        </h1>
+
+        <p>
+          Review your fresh organic products before checkout.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CART AREA -->
+
+    <section class="section">
+
+      <div class="container cartlayout">
+
+
+        <!-- CART PRODUCTS -->
+
+        <div
+          class="box"
+          id="cartItems"
+        >
+
+          <!-- Products are automatically added here
+               by assets/js/main.js -->
+
+        </div>
+
+
+
+        <!-- ORDER SUMMARY -->
+
+        <aside class="box">
+
+          <h2>
+            Order Summary
+          </h2>
+
+
+          <div class="line">
+
+            <span>
+              Subtotal
+            </span>
+
+            <b id="subtotal">
+              ₹0
+            </b>
+
+          </div>
+
+
+          <div class="line">
+
+            <span>
+              Delivery
+            </span>
+
+            <b id="delivery">
+              ₹0
+            </b>
+
+          </div>
+
+
+          <div class="line total">
+
+            <span>
+              Total
+            </span>
+
+            <strong id="total">
+              ₹0
+            </strong>
+
+          </div>
+
+
+          <a
+            class="btn primary"
+            href="checkout.html"
+            style="width:100%; margin-top:16px;"
+          >
+
+            Proceed to Checkout →
+
+          </a>
+
+
+          <a
+            class="btn secondary"
+            href="shop.html"
+            style="width:100%; margin-top:10px;"
+          >
+
+            ← Continue Shopping
+
+          </a>
+
+
+          <p
+            style="
+              margin-top:14px;
+              font-size:13px;
+              color:#68736c;
+            "
+          >
+
+            🚚 Free delivery on eligible orders.
+
+          </p>
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <!-- FARM -->
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables
+            grown responsibly and delivered
+            directly from farm to home.
+          </p>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <!-- FARM -->
+
+        <div>
+
+          <h3>
+            Farm
+          </h3>
+
+          <a href="farm.html">
+            Our Story
+          </a>
+
+          <a href="gallery.html">
+            Gallery
+          </a>
+
+          <a href="contact.html">
+            Farm Visit
+          </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- COPYRIGHT -->
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

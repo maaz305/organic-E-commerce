@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Create a Buyer or Farmer account on Maaz Farms."
+  >
+
+  <title>Create Account | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+</head>
+
+<body>
+
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="top">
+
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+
+      <!-- BRAND -->
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+
+      <!-- NAVIGATION -->
+
+      <nav
+        class="links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="cart.html"
+          class="cart"
+        >
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+        </a>
+
+        <a
+          href="login.html"
+          class="account-link"
+          data-account-link
+        >
+          👤 Login
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- SIGNUP HERO -->
+
+    <section class="page">
+
+      <div class="container">
+
+        <span class="badge">
+          👤 Create Account
+        </span>
+
+        <h1>
+          Join as a
+          <span>Buyer or Farmer.</span>
+        </h1>
+
+        <p>
+          Create the profile that matches how you use
+          the Maaz Farms organic store.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= SIGNUP AREA ================= -->
+
+    <section class="section">
+
+      <div class="container auth-shell">
+
+
+        <!-- LEFT INFORMATION PANEL -->
+
+        <aside class="auth-side">
+
+          <div>
+
+            <span class="badge">
+              🌱 Simple Registration
+            </span>
+
+            <h2>
+              Start shopping or manage your farm.
+            </h2>
+
+            <p>
+              Buyer and Farmer accounts remain separate,
+              so each user sees only the features designed
+              for their account type.
+            </p>
+
+
+
+            <div class="auth-points">
+
+
+              <div class="auth-point">
+
+                ✅
+
+                <span>
+                  Buyer profile and order history
+                </span>
+
+              </div>
+
+
+
+              <div class="auth-point">
+
+                ✅
+
+                <span>
+                  Farmer dashboard and customer orders
+                </span>
+
+              </div>
+
+
+
+              <div class="auth-point">
+
+                ✅
+
+                <span>
+                  Role-based account navigation
+                </span>
+
+              </div>
+
+
+
+              <div class="auth-point">
+
+                ✅
+
+                <span>
+                  Separate Buyer and Farmer experience
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+          <small>
+            Demo registration uses browser localStorage.
+            For a real website, authentication and passwords
+            should be managed by a secure backend.
+          </small>
+
+        </aside>
+
+
+
+        <!-- ================= SIGNUP FORM ================= -->
+
+        <form
+          class="auth-card"
+          id="signupForm"
+        >
+
+
+          <h1>
+            Create Your Account
+          </h1>
+
+
+          <div class="meta">
+            Select whether you are creating a
+            Buyer or Farmer account.
+          </div>
+
+
+
+          <!-- ================= ROLE TABS ================= -->
+
+          <div class="role-tabs">
+
+
+            <button
+              type="button"
+              class="role-tab active"
+              data-role-tab="buyer"
+            >
+              🛍️ Buyer
+            </button>
+
+
+            <button
+              type="button"
+              class="role-tab"
+              data-role-tab="farmer"
+            >
+              🧑‍🌾 Farmer
+            </button>
+
+
+          </div>
+
+
+
+          <!-- SELECTED ROLE -->
+
+          <input
+            id="signupRole"
+            type="hidden"
+            value="buyer"
+          >
+
+
+
+          <!-- ================= FORM ================= -->
+
+          <div class="form-grid">
+
+
+            <!-- FULL NAME -->
+
+            <div class="field">
+
+              <label for="signupName">
+                Full Name
+              </label>
+
+              <input
+                id="signupName"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Enter your full name"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- MOBILE NUMBER -->
+
+            <div class="field">
+
+              <label for="signupPhone">
+                Mobile Number
+              </label>
+
+              <input
+                id="signupPhone"
+                name="phone"
+                type="tel"
+                maxlength="10"
+                inputmode="numeric"
+                pattern="[6-9][0-9]{9}"
+                autocomplete="tel"
+                placeholder="10-digit mobile number"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="field full">
+
+              <label for="signupEmail">
+                Email Address
+              </label>
+
+              <input
+                id="signupEmail"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="field full">
+
+              <label for="signupPassword">
+                Password
+              </label>
+
+
+              <div style="position:relative;">
+
+                <input
+                  id="signupPassword"
+                  name="password"
+                  type="password"
+                  minlength="6"
+                  autocomplete="new-password"
+                  placeholder="Minimum 6 characters"
+                  required
+                  style="
+                    width:100%;
+                    padding-right:52px;
+                  "
+                >
+
+
+                <button
+                  type="button"
+                  id="toggleSignupPassword"
+                  aria-label="Show or hide password"
+                  style="
+                    position:absolute;
+                    right:10px;
+                    top:50%;
+                    transform:translateY(-50%);
+                    border:0;
+                    background:transparent;
+                    cursor:pointer;
+                    font-size:18px;
+                  "
+                >
+                  👁️
+                </button>
+
+              </div>
+
+
+              <small class="meta">
+                Use at least 6 characters.
+              </small>
+
+            </div>
+
+
+
+            <!-- ================= FARMER ONLY ================= -->
+
+            <div
+              class="field full"
+              data-farmer-only
+              style="display:none;"
+            >
+
+              <label for="farmName">
+                Farm Name
+              </label>
+
+              <input
+                id="farmName"
+                name="farmName"
+                type="text"
+                placeholder="Example: Maaz Farms"
+              >
+
+            </div>
+
+
+
+            <div
+              class="field full"
+              data-farmer-only
+              style="display:none;"
+            >
+
+              <label for="farmLocation">
+                Farm Location
+              </label>
+
+              <input
+                id="farmLocation"
+                name="farmLocation"
+                type="text"
+                placeholder="Kurnool, Andhra Pradesh"
+              >
+
+            </div>
+
+
+
+            <!-- CREATE ACCOUNT -->
+
+            <div class="field full">
+
+              <button
+                class="btn primary"
+                type="submit"
+                style="width:100%;"
+              >
+                Create Account →
+              </button>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- LINKS -->
+
+          <div class="inline-links">
+
+            <span>
+
+              Already registered?
+
+              <a href="login.html">
+                Login
+              </a>
+
+            </span>
+
+
+            <a href="index.html">
+              Back to Store
+            </a>
+
+          </div>
+
+
+        </form>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables
+            grown responsibly and delivered
+            directly from farm to home.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Accounts
+          </h3>
+
+          <a href="login.html">
+            Login
+          </a>
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+          <a href="buyer-profile.html">
+            Buyer Profile
+          </a>
+
+          <a href="farmer-dashboard.html">
+            Farmer Dashboard
+          </a>
+
+        </div>
+
+
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+
+  <!-- SHOW / HIDE PASSWORD -->
+
+  <script>
+
+    const toggleSignupPassword =
+      document.getElementById("toggleSignupPassword");
+
+    const signupPassword =
+      document.getElementById("signupPassword");
+
+
+    if (toggleSignupPassword && signupPassword) {
+
+      toggleSignupPassword.addEventListener(
+        "click",
+        function () {
+
+          if (
+            signupPassword.type === "password"
+          ) {
+
+            signupPassword.type = "text";
+
+            toggleSignupPassword.textContent =
+              "🙈";
+
+          }
+
+          else {
+
+            signupPassword.type =
+              "password";
+
+            toggleSignupPassword.textContent =
+              "👁️";
+
+          }
+
+        }
+      );
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>

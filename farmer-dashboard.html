@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Maaz Farms farmer dashboard for managing orders, products, enquiries and farm activity."
+  >
+
+  <title>Farmer Dashboard | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="top">
+
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+
+      <!-- BRAND -->
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+
+      <!-- NAVIGATION -->
+
+      <nav
+        class="links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="cart.html"
+          class="cart"
+        >
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+        </a>
+
+        <a
+          href="farmer-dashboard.html"
+          class="account-link active"
+          data-account-link
+        >
+          👨‍🌾 Farmer
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ================= FARMER DASHBOARD ================= -->
+
+  <main
+    id="farmerDashboard"
+    class="farmer-profile-ui"
+  >
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="farmer-dashboard-hero">
+
+      <div class="container farmer-hero-row">
+
+
+        <div>
+
+          <span class="farmer-kicker">
+            🌾 FARMER CONTROL CENTER
+          </span>
+
+          <h1>
+            Welcome,
+            <span data-farmer-name>
+              Farmer
+            </span>.
+          </h1>
+
+          <p>
+            Track customer orders, inventory,
+            enquiries and farm activity from one dashboard.
+          </p>
+
+        </div>
+
+
+
+        <!-- FARM STATUS -->
+
+        <div class="farmer-live-card">
+
+          <span class="live-dot"></span>
+
+          <div>
+
+            <small>
+              FARM STATUS
+            </small>
+
+            <b>
+              Maaz Farms is active
+            </b>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="section farmer-dashboard-section">
+
+      <div class="container farmer-dashboard-shell">
+
+
+        <!-- ================= FARMER SIDEBAR ================= -->
+
+        <aside class="farmer-sidebar">
+
+
+          <!-- FARMER PHOTO -->
+
+          <div class="farmer-avatar">
+
+            <img
+              src="assets/photos/owner-photo.jpg"
+              alt="Maaz Farms farmer"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+            >
+
+            <span
+              class="farmer-avatar-fallback"
+              style="display:none;"
+            >
+              🧑‍🌾
+            </span>
+
+          </div>
+
+
+
+          <span class="farmer-role">
+            Farmer Account
+          </span>
+
+
+          <h2 data-farm-name>
+            Maaz Farms
+          </h2>
+
+
+
+          <!-- FARMER INFORMATION -->
+
+          <div class="farmer-profile-info">
+
+
+            <div>
+
+              <span>
+                Farmer
+              </span>
+
+              <b data-farmer-name>
+                -
+              </b>
+
+            </div>
+
+
+
+            <div>
+
+              <span>
+                Email
+              </span>
+
+              <b data-farmer-email>
+                -
+              </b>
+
+            </div>
+
+
+
+            <div>
+
+              <span>
+                Phone
+              </span>
+
+              <b data-farmer-phone>
+                -
+              </b>
+
+            </div>
+
+
+
+            <div>
+
+              <span>
+                Location
+              </span>
+
+              <b data-farm-location>
+                -
+              </b>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- QUICK LINKS -->
+
+          <div class="farmer-side-links">
+
+            <a href="shop.html">
+              🌱 View Store
+            </a>
+
+            <a href="gallery.html">
+              📷 Farm Gallery
+            </a>
+
+            <a href="contact.html">
+              💬 Enquiries Page
+            </a>
+
+          </div>
+
+
+
+          <!-- LOGOUT -->
+
+          <button
+            class="farmer-logout"
+            type="button"
+            onclick="logout()"
+          >
+            Logout Farmer Account
+          </button>
+
+
+        </aside>
+
+
+
+        <!-- ================= FARMER WORKSPACE ================= -->
+
+        <div class="farmer-workspace">
+
+
+          <!-- ================= METRICS ================= -->
+
+          <div class="farmer-metric-grid">
+
+
+            <!-- ORDERS -->
+
+            <article>
+
+              <span>
+                📦
+              </span>
+
+              <div>
+
+                <small>
+                  CUSTOMER ORDERS
+                </small>
+
+                <strong id="farmerOrderCount">
+                  0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- REVENUE -->
+
+            <article>
+
+              <span>
+                💰
+              </span>
+
+              <div>
+
+                <small>
+                  DEMO REVENUE
+                </small>
+
+                <strong id="farmerRevenue">
+                  ₹0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- ENQUIRIES -->
+
+            <article>
+
+              <span>
+                💬
+              </span>
+
+              <div>
+
+                <small>
+                  ENQUIRIES
+                </small>
+
+                <strong id="farmerEnquiryCount">
+                  0
+                </strong>
+
+              </div>
+
+            </article>
+
+
+          </div>
+
+
+
+          <!-- ================= CUSTOMER ORDERS ================= -->
+
+          <section class="farmer-panel">
+
+            <div class="farmer-panel-title">
+
+              <div>
+
+                <small>
+                  SALES
+                </small>
+
+                <h3>
+                  Recent Customer Orders
+                </h3>
+
+              </div>
+
+              <span class="farmer-panel-icon">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div id="farmerOrders">
+
+              <!-- Orders loaded by main.js -->
+
+            </div>
+
+          </section>
+
+
+
+          <!-- ================= INVENTORY + ENQUIRIES ================= -->
+
+          <div class="farmer-panel-grid">
+
+
+            <!-- INVENTORY -->
+
+            <section class="farmer-panel">
+
+              <div class="farmer-panel-title">
+
+                <div>
+
+                  <small>
+                    STORE
+                  </small>
+
+                  <h3>
+                    Product Inventory
+                  </h3>
+
+                </div>
+
+                <span class="farmer-panel-icon">
+                  🌿
+                </span>
+
+              </div>
+
+
+              <div id="farmerInventory">
+
+                <!-- Inventory loaded by main.js -->
+
+              </div>
+
+            </section>
+
+
+
+            <!-- CUSTOMER ENQUIRIES -->
+
+            <section class="farmer-panel">
+
+              <div class="farmer-panel-title">
+
+                <div>
+
+                  <small>
+                    CUSTOMERS
+                  </small>
+
+                  <h3>
+                    Customer Enquiries
+                  </h3>
+
+                </div>
+
+                <span class="farmer-panel-icon">
+                  ✉
+                </span>
+
+              </div>
+
+
+              <div id="farmerEnquiries">
+
+                <!-- Enquiries loaded by main.js -->
+
+              </div>
+
+            </section>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <!-- FARM -->
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables grown
+            responsibly and delivered directly from
+            farm to home.
+          </p>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <!-- ACCOUNTS -->
+
+        <div>
+
+          <h3>
+            Accounts
+          </h3>
+
+          <a href="login.html">
+            Login
+          </a>
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+          <a href="buyer-profile.html">
+            Buyer Profile
+          </a>
+
+          <a href="farmer-dashboard.html">
+            Farmer Dashboard
+          </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- COPYRIGHT -->
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

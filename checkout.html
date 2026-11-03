@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Secure checkout for fresh organic fruits and vegetables from Maaz Farms."
+  >
+
+  <title>Checkout | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+</head>
+
+
+<body>
+
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="top">
+
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+
+      <!-- BRAND -->
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+
+      <!-- NAVIGATION -->
+
+      <nav
+        class="links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+
+        <a
+          href="cart.html"
+          class="cart"
+        >
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+        </a>
+
+
+        <a
+          href="login.html"
+          class="account-link"
+          data-account-link
+        >
+          👤 Login
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- CHECKOUT HERO -->
+
+    <section class="page">
+
+      <div class="container">
+
+        <span class="badge">
+          🔒 Secure checkout
+        </span>
+
+        <h1>
+          Complete your
+          <span>farm order.</span>
+        </h1>
+
+        <p>
+          Enter your delivery details and choose your
+          preferred payment method.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= CHECKOUT FORM ================= -->
+
+    <section class="section">
+
+      <div
+        class="container"
+        style="max-width:900px;"
+      >
+
+
+        <!-- LOGIN MESSAGE -->
+
+        <div
+          id="checkoutLoginNote"
+          class="checkout-login-note"
+          style="display:none;"
+        >
+        </div>
+
+
+
+        <form
+          class="form"
+          id="checkoutForm"
+        >
+
+
+          <!-- DELIVERY TITLE -->
+
+          <div class="sh">
+
+            <span class="badge">
+              🚚 Delivery details
+            </span>
+
+            <h2>
+              Buyer Information
+            </h2>
+
+            <p>
+              Please provide the details required to deliver
+              your fresh organic produce.
+            </p>
+
+          </div>
+
+
+
+          <div class="fg">
+
+
+            <!-- FULL NAME -->
+
+            <div class="field">
+
+              <label for="checkoutName">
+                Full Name
+              </label>
+
+              <input
+                id="checkoutName"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Enter your full name"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="field">
+
+              <label for="checkoutPhone">
+                Mobile Number
+              </label>
+
+              <input
+                id="checkoutPhone"
+                name="phone"
+                type="tel"
+                maxlength="10"
+                inputmode="numeric"
+                pattern="[6-9][0-9]{9}"
+                autocomplete="tel"
+                placeholder="10-digit mobile number"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="field full">
+
+              <label for="checkoutEmail">
+                Email Address
+              </label>
+
+              <input
+                id="checkoutEmail"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="example@gmail.com"
+                required
+              >
+
+            </div>
+
+
+
+            <!-- ADDRESS -->
+
+            <div class="field full">
+
+              <label for="checkoutAddress">
+                Delivery Address
+              </label>
+
+              <textarea
+                id="checkoutAddress"
+                name="address"
+                autocomplete="street-address"
+                placeholder="House number, street, area, city and PIN code"
+                required
+              ></textarea>
+
+            </div>
+
+
+
+            <!-- ================= PAYMENT ================= -->
+
+            <div class="field full">
+
+              <label>
+                Choose Payment Method
+              </label>
+
+
+              <div class="payment-methods">
+
+
+                <!-- COD -->
+
+                <label class="payment-option">
+
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="cod"
+                    checked
+                  >
+
+                  <b>
+                    💵 Cash on Delivery
+                  </b>
+
+                  <small>
+                    Pay when your order arrives
+                  </small>
+
+                </label>
+
+
+
+                <!-- UPI -->
+
+                <label class="payment-option">
+
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="upi"
+                  >
+
+                  <b>
+                    📱 UPI
+                  </b>
+
+                  <small>
+                    Google Pay / PhonePe / Paytm
+                  </small>
+
+                </label>
+
+
+
+                <!-- CARD -->
+
+                <label class="payment-option">
+
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="card"
+                  >
+
+                  <b>
+                    💳 Debit / Credit Card
+                  </b>
+
+                  <small>
+                    Visa / Mastercard / RuPay
+                  </small>
+
+                </label>
+
+
+
+                <!-- NET BANKING -->
+
+                <label class="payment-option">
+
+                  <input
+                    type="radio"
+                    name="paymentMethod"
+                    value="netbanking"
+                  >
+
+                  <b>
+                    🏦 Net Banking
+                  </b>
+
+                  <small>
+                    Pay using your bank
+                  </small>
+
+                </label>
+
+
+              </div>
+
+
+
+              <!-- ================= COD DETAILS ================= -->
+
+              <div
+                class="payment-details"
+                data-payment-panel="cod"
+              >
+
+                <b>
+                  💵 Cash on Delivery
+                </b>
+
+                <p class="meta">
+                  Pay the delivery person after receiving
+                  your fresh organic produce.
+                </p>
+
+              </div>
+
+
+
+              <!-- ================= UPI DETAILS ================= -->
+
+              <div
+                class="payment-details hidden"
+                data-payment-panel="upi"
+              >
+
+                <div class="field">
+
+                  <label for="upiId">
+                    UPI ID
+                  </label>
+
+                  <input
+                    id="upiId"
+                    name="upiId"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="example@upi"
+                  >
+
+                </div>
+
+
+                <div class="secure-note">
+                  🔒 Demo payment only. No real money
+                  will be charged.
+                </div>
+
+              </div>
+
+
+
+              <!-- ================= CARD DETAILS ================= -->
+
+              <div
+                class="payment-details hidden"
+                data-payment-panel="card"
+              >
+
+
+                <div class="field">
+
+                  <label for="cardName">
+                    Cardholder Name
+                  </label>
+
+                  <input
+                    id="cardName"
+                    name="cardName"
+                    type="text"
+                    autocomplete="cc-name"
+                    placeholder="Name on card"
+                  >
+
+                </div>
+
+
+
+                <div
+                  class="field"
+                  style="margin-top:10px;"
+                >
+
+                  <label for="cardNumber">
+                    Card Number
+                  </label>
+
+                  <input
+                    id="cardNumber"
+                    name="cardNumber"
+                    type="text"
+                    maxlength="19"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                    placeholder="1234 5678 9012 3456"
+                  >
+
+                </div>
+
+
+
+                <div
+                  class="card-row"
+                  style="margin-top:10px;"
+                >
+
+
+                  <!-- EXPIRY -->
+
+                  <div class="field">
+
+                    <label for="cardExpiry">
+                      Expiry
+                    </label>
+
+                    <input
+                      id="cardExpiry"
+                      name="cardExpiry"
+                      type="text"
+                      maxlength="5"
+                      autocomplete="cc-exp"
+                      placeholder="MM/YY"
+                    >
+
+                  </div>
+
+
+
+                  <!-- CVV -->
+
+                  <div class="field">
+
+                    <label for="cardCvv">
+                      CVV
+                    </label>
+
+                    <input
+                      id="cardCvv"
+                      name="cardCvv"
+                      type="password"
+                      maxlength="4"
+                      inputmode="numeric"
+                      autocomplete="cc-csc"
+                      placeholder="123"
+                    >
+
+                  </div>
+
+
+                </div>
+
+
+                <div class="secure-note">
+                  🔒 Demo only. Card details are not stored.
+                </div>
+
+              </div>
+
+
+
+              <!-- ================= NET BANKING ================= -->
+
+              <div
+                class="payment-details hidden"
+                data-payment-panel="netbanking"
+              >
+
+                <div class="field">
+
+                  <label for="bankName">
+                    Select Bank
+                  </label>
+
+                  <select
+                    id="bankName"
+                    name="bankName"
+                  >
+
+                    <option value="">
+                      Choose your bank
+                    </option>
+
+                    <option value="sbi">
+                      State Bank of India
+                    </option>
+
+                    <option value="hdfc">
+                      HDFC Bank
+                    </option>
+
+                    <option value="icici">
+                      ICICI Bank
+                    </option>
+
+                    <option value="axis">
+                      Axis Bank
+                    </option>
+
+                    <option value="canara">
+                      Canara Bank
+                    </option>
+
+                    <option value="bob">
+                      Bank of Baroda
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="secure-note">
+                  🏦 Demo flow. A real website would
+                  redirect you to the selected bank or
+                  secure payment gateway.
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+
+            <!-- PLACE ORDER -->
+
+            <div class="field full">
+
+              <button
+                class="btn primary"
+                type="submit"
+                style="width:100%;"
+              >
+                Place Order →
+              </button>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- ORDER SUCCESS -->
+
+          <div
+            class="success"
+            id="checkoutSuccess"
+          >
+          </div>
+
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <!-- MAAZ FARMS -->
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables grown
+            responsibly and delivered directly from
+            farm to home.
+          </p>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <!-- ACCOUNT -->
+
+        <div>
+
+          <h3>
+            Accounts
+          </h3>
+
+          <a href="login.html">
+            Login
+          </a>
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+          <a href="buyer-profile.html">
+            Buyer Profile
+          </a>
+
+          <a href="farmer-dashboard.html">
+            Farmer Dashboard
+          </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- COPYRIGHT -->
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

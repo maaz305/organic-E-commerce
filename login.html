@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Login to Maaz Farms as a buyer or farmer."
+  >
+
+  <title>Login | Maaz Farms</title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  >
+</head>
+
+<body>
+
+
+  <!-- ================= TOP BAR ================= -->
+
+  <div class="top">
+
+    <div class="container">
+
+      <span>
+        🌿 100% Organic Farm Produce
+      </span>
+
+      <span>
+        🚚 Fresh Farm-to-Home Delivery • Kurnool
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="head">
+
+    <div class="container nav">
+
+
+      <!-- BRAND -->
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
+        <span class="logo">
+          🌱
+        </span>
+
+        <span>
+
+          <strong>
+            Maaz Farms
+          </strong>
+
+          <small>
+            Fresh • Natural • Local
+          </small>
+
+        </span>
+
+      </a>
+
+
+
+      <!-- MOBILE MENU -->
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+
+
+      <!-- NAVIGATION -->
+
+      <nav
+        class="links"
+        aria-label="Main navigation"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="fruits.html">
+          Fruits
+        </a>
+
+        <a href="vegetables.html">
+          Vegetables
+        </a>
+
+        <a href="farm.html">
+          Our Farm
+        </a>
+
+        <a href="gallery.html">
+          Gallery
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="cart.html"
+          class="cart"
+        >
+          🛒 Cart
+          (<span data-cart-count>0</span>)
+        </a>
+
+        <a
+          href="login.html"
+          class="account-link active"
+          data-account-link
+        >
+          👤 Login
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ================= MAIN ================= -->
+
+  <main>
+
+
+    <!-- LOGIN HERO -->
+
+    <section class="page">
+
+      <div class="container">
+
+        <span class="badge">
+          🔒 Secure Account Access
+        </span>
+
+        <h1>
+          Login as
+          <span>Buyer or Farmer.</span>
+        </h1>
+
+        <p>
+          Choose your account type and access the correct
+          Maaz Farms dashboard.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= LOGIN AREA ================= -->
+
+    <section class="section">
+
+      <div class="container auth-shell">
+
+
+        <!-- LEFT INFORMATION PANEL -->
+
+        <aside class="auth-side">
+
+          <div>
+
+            <span class="badge">
+              🌱 Maaz Farms
+            </span>
+
+            <h2>
+              One store.
+              Two different experiences.
+            </h2>
+
+            <p>
+              Buyers can shop, checkout and track orders.
+              Farmers can monitor orders, customer enquiries
+              and farm products from one dashboard.
+            </p>
+
+
+
+            <!-- ACCOUNT FEATURES -->
+
+            <div class="auth-points">
+
+
+              <!-- BUYER -->
+
+              <div class="auth-point">
+
+                🛒
+
+                <span>
+
+                  <b>
+                    Buyer Account
+                  </b>
+
+                  <br>
+
+                  Cart, checkout, payment
+                  and order history.
+
+                </span>
+
+              </div>
+
+
+
+              <!-- FARMER -->
+
+              <div class="auth-point">
+
+                🧑‍🌾
+
+                <span>
+
+                  <b>
+                    Farmer Account
+                  </b>
+
+                  <br>
+
+                  Farm profile, customer orders,
+                  inventory and enquiries.
+
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <small>
+            Demo authentication uses browser localStorage
+            and is for testing only.
+          </small>
+
+        </aside>
+
+
+
+        <!-- ================= LOGIN FORM ================= -->
+
+        <form
+          class="auth-card"
+          id="loginForm"
+        >
+
+
+          <h1>
+            Welcome Back
+          </h1>
+
+
+          <div class="meta">
+
+            Select the account type you want
+            to sign in to.
+
+          </div>
+
+
+
+          <!-- ROLE SELECTOR -->
+
+          <div class="role-tabs">
+
+
+            <button
+              type="button"
+              class="role-tab active"
+              data-role-tab="buyer"
+            >
+              🛍️ Buyer
+            </button>
+
+
+            <button
+              type="button"
+              class="role-tab"
+              data-role-tab="farmer"
+            >
+              🧑‍🌾 Farmer
+            </button>
+
+
+          </div>
+
+
+
+          <!-- EMAIL -->
+
+          <div class="field">
+
+            <label for="loginEmail">
+              Email Address
+            </label>
+
+            <input
+              id="loginEmail"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+
+
+          <!-- PASSWORD -->
+
+          <div
+            class="field"
+            style="margin-top:13px;"
+          >
+
+            <label for="loginPassword">
+              Password
+            </label>
+
+
+            <div
+              style="
+                position:relative;
+              "
+            >
+
+              <input
+                id="loginPassword"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter password"
+                required
+                style="
+                  width:100%;
+                  padding-right:52px;
+                "
+              >
+
+
+              <button
+                type="button"
+                id="togglePassword"
+                aria-label="Show or hide password"
+                style="
+                  position:absolute;
+                  right:10px;
+                  top:50%;
+                  transform:translateY(-50%);
+                  border:0;
+                  background:transparent;
+                  cursor:pointer;
+                  font-size:18px;
+                "
+              >
+                👁️
+              </button>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- LOGIN ERROR -->
+
+          <div
+            id="loginError"
+            class="success"
+            style="
+              background:#fff0f0;
+              color:#a33b3b;
+            "
+          >
+          </div>
+
+
+
+          <!-- LOGIN BUTTON -->
+
+          <button
+            class="btn primary"
+            style="
+              width:100%;
+              margin-top:18px;
+            "
+            type="submit"
+          >
+            Login →
+          </button>
+
+
+
+          <!-- LINKS -->
+
+          <div class="inline-links">
+
+            <span>
+              New here?
+
+              <a href="signup.html">
+                Create Account
+              </a>
+
+            </span>
+
+
+            <a href="index.html">
+              Back to Store
+            </a>
+
+          </div>
+
+
+
+          <!-- DEMO ACCOUNTS -->
+
+          <div class="demo-box">
+
+            <b>
+              Demo Buyer:
+            </b>
+
+            buyer@demo.com / buyer123
+
+            <br>
+
+            <b>
+              Demo Farmer:
+            </b>
+
+            farmer@demo.com / farmer123
+
+          </div>
+
+
+        </form>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+      <div class="footgrid">
+
+
+        <!-- FARM -->
+
+        <div>
+
+          <h3>
+            Maaz Farms
+          </h3>
+
+          <p>
+            Fresh organic fruits and vegetables
+            grown responsibly and delivered
+            directly from farm to home.
+          </p>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div>
+
+          <h3>
+            Shop
+          </h3>
+
+          <a href="fruits.html">
+            Organic Fruits
+          </a>
+
+          <a href="vegetables.html">
+            Organic Vegetables
+          </a>
+
+          <a href="cart.html">
+            My Cart
+          </a>
+
+        </div>
+
+
+
+        <!-- ACCOUNTS -->
+
+        <div>
+
+          <h3>
+            Accounts
+          </h3>
+
+          <a href="login.html">
+            Login
+          </a>
+
+          <a href="signup.html">
+            Create Account
+          </a>
+
+          <a href="buyer-profile.html">
+            Buyer Profile
+          </a>
+
+          <a href="farmer-dashboard.html">
+            Farmer Dashboard
+          </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <p>
+            Kurnool, Andhra Pradesh
+          </p>
+
+          <p>
+            +91 98765 43210
+          </p>
+
+          <p>
+            hello@maazfarms.in
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- COPYRIGHT -->
+
+      <div class="bottom">
+
+        © 2026 Maaz Farms
+        • Professional farm-to-home store
+        •
+
+        <a
+          class="photo-credit-link"
+          href="credits.html"
+        >
+          Photo Credits
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="assets/js/products.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+
+  <!-- SHOW / HIDE PASSWORD -->
+
+  <script>
+
+    const togglePassword =
+      document.getElementById("togglePassword");
+
+    const loginPassword =
+      document.getElementById("loginPassword");
+
+
+    if (togglePassword && loginPassword) {
+
+      togglePassword.addEventListener(
+        "click",
+        function () {
+
+          if (
+            loginPassword.type === "password"
+          ) {
+
+            loginPassword.type = "text";
+
+            togglePassword.textContent =
+              "🙈";
+
+          }
+
+          else {
+
+            loginPassword.type =
+              "password";
+
+            togglePassword.textContent =
+              "👁️";
+
+          }
+
+        }
+      );
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
